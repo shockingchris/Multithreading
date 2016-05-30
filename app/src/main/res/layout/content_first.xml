@@ -27,6 +27,36 @@
         android:layout_below="@id/progress_name"
         android:layout_centerHorizontal="true"
         android:max="100"
-        android:progress="45"/>
+        android:progress="5"/>
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/create"
+        android:text="Load"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/load"
+        android:text="Clear"
+        android:layout_alignParentBottom="true" />
+
+    <ListView
+        android:id="@+id/my_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/progress"
+        android:layout_above="@id/create"/>
 
 </RelativeLayout>
